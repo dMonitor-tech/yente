@@ -1,3 +1,21 @@
+# Yente Installation Guide for dMonitor
+
+This guide provides instructions for installing Yente, a key component of the dmonitor application, using Docker Compose. Yente enhances dmonitor's monitoring capabilities, and this setup ensures a straightforward and consistent installation experience using Docker.
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed on your system:
+- Docker: [Get Docker](https://docs.docker.com/get-docker/)
+- Docker Compose: [Install Docker Compose](https://docs.docker.com/compose/install/)
+
+## Installation Steps
+```bash
+mkdir -p yente && cd yente
+wget https://raw.githubusercontent.com/opensanctions/yente/main/docker-compose.yml
+docker-compose up
+```
+
+
 # yente
 
 `yente` is an open source data match-making API. The service provides several HTTP endpoints to search, retrieve or match [FollowTheMoney entities](https://www.opensanctions.org/docs/entities/), including people, companies or vessels that are subject to international sanctions. 
